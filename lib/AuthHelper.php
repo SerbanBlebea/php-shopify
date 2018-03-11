@@ -109,9 +109,8 @@ class AuthHelper
         if (is_array($scopes)) {
             $scopes = join(',', $scopes);
         }
-        $authUrl = $config['AdminUrl'] . 'oauth/authorize?client_id=' . $config['ApiKey'] . '&redirect_uri=' . $redirectUrl . "&scope=$scopes";
+        return $config['AdminUrl'] . 'oauth/authorize?client_id=' . $config['ApiKey'] . '&redirect_uri=' . $redirectUrl . "&scope=$scopes";
 
-        header("Location: $authUrl");
     }
 
     /**
