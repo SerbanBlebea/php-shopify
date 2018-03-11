@@ -62,8 +62,9 @@ namespace PHPShopify;
 |
 */
 use PHPShopify\Exception\SdkException;
+use PHPShopify\Interfaces\ShopifySDKInterface;
 
-class ShopifySDK
+class ShopifySDK implements ShopifySDKInterface
 {
     /**
      * @var float microtime of last api call

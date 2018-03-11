@@ -7,10 +7,10 @@
 
 namespace PHPShopify;
 
-
 use PHPShopify\Exception\SdkException;
+use PHPShopify\Interfaces\AuthHelperInterface;
 
-class AuthHelper
+class AuthHelper implements AuthHelperInterface
 {
     /**
      * Get the url of the current page
